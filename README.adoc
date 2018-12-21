@@ -1,0 +1,35 @@
+= AR Workbench Client
+
+React client written in TypeScript (based on https://github.com/facebook/create-react-app[create-react-app]).
+
+== Installing
+
+`npm install` downloads all necessary dependencies.
+
+== Running / Developing
+
+`npm start` compiles and runs the application, spawning a server which reloads the pages as you develop.
+
+== Testing
+
+`npm test` runs all tests.
+
+== Releasing
+
+* `git tag v1.2.3` creates a release tag
+* `npm run build` creates an optimized production build
+* Copy `build` folder to test server (TODO: Where exactly?)
+* `git push --tags`
+* Update `version` property in `package.json` to prepare for next release
+* Update issues/milestones/board on GitLab
+
+== QA
+
+=== Formatting
+
+This project uses https://github.com/typicode/husky[husky] to format all code via a git commit hook.
+To force a commit in defiance of the hook, use `git commit --no-verify`.
+
+=== Continuous Integration
+
+https://v000237.adm.ds.fhnw.ch/jenkins/job/ar-workbench
