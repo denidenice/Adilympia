@@ -17,7 +17,9 @@ const useStyles = makeStyles((theme: Theme) => ({
         display: 'grid',
         gridTemplateColumns: 'auto auto', // left/right (center is not part of flow)
         paddingLeft: pagePadding,
-        paddingRight: pagePadding
+        paddingRight: pagePadding,
+        color: theme.palette.common.black,
+        background: theme.palette.background.paper
     },
     toolbarCenter: {
         // position centered on page (rather than in flow of toolbar items)
@@ -28,7 +30,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     title: {
         justifySelf: 'center',
-        color: theme.palette.primary.contrastText
+        color: theme.palette.text.primary
     },
     toolbarLeft: {
         height: '100%',
