@@ -2,16 +2,16 @@ export type HomeScreen = Readonly<{
     type: 'home'
 }>
 
-export type ProceduralScreen = Readonly<{
-    type: 'procedural'
+export type EditGameScreen = Readonly<{
+    type: 'game'
 }>
 
-export type MedicalScreen = Readonly<{
-    type: 'medical'
+export type HistoryScreen = Readonly<{
+    type: 'history'
 }>
 
-export type MolecularScreen = Readonly<{
-    type: 'molecular'
+export type StatsScreen = Readonly<{
+    type: 'stats'
 }>
 
 export type ErrorScreen = Readonly<{
@@ -19,4 +19,4 @@ export type ErrorScreen = Readonly<{
     message: string
 }>
 
-export type AdilympicsScreen = HomeScreen | ProceduralScreen | MedicalScreen | MolecularScreen | ErrorScreen
+export type AdilympicsScreen = HomeScreen | EditGameScreen | HistoryScreen | StatsScreen | ErrorScreen

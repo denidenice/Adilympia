@@ -1,4 +1,4 @@
-= AR Workbench Client
+= Adilympics page
 
 React client written in TypeScript (based on https://github.com/facebook/create-react-app[create-react-app]).
 
@@ -30,6 +30,3 @@ React client written in TypeScript (based on https://github.com/facebook/create-
 This project uses https://github.com/typicode/husky[husky] to format all code via a git commit hook.
 To force a commit in defiance of the hook, use `git commit --no-verify`.
 
-=== Continuous Integration
-
-https://v000237.adm.ds.fhnw.ch/jenkins/job/ar-workbench

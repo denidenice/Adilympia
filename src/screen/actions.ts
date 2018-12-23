@@ -17,29 +17,29 @@ export const switchToHomeScreen = (): SwitchScreenAction => {
     }
 }
 
-export const switchToProceduralScreen = (): SwitchScreenAction => {
+export const switchToEditGameScreen = (): SwitchScreenAction => {
     return {
         type: SWITCH_SCREEN,
         screen: {
-            type: 'procedural'
+            type: 'game'
         }
     }
 }
 
-export const switchToMedicalScreen = (): SwitchScreenAction => {
+export const switchToHistoryScreen = (): SwitchScreenAction => {
     return {
         type: SWITCH_SCREEN,
         screen: {
-            type: 'medical'
+            type: 'history'
         }
     }
 }
 
-export const switchToMolecularScreen = (): SwitchScreenAction => {
+export const switchToStatsScreen = (): SwitchScreenAction => {
     return {
         type: SWITCH_SCREEN,
         screen: {
-            type: 'molecular'
+            type: 'stats'
         }
     }
 }

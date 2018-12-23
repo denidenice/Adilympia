@@ -3,7 +3,7 @@ import { defaultAdilympicsState } from '../../store'
 import { TOGGLE_THEME } from '../../theme/actionTypes'
 import { darkTheme, lightTheme, toggleTheme, ToggleThemeAction } from '../../theme'
 import { SWITCH_SCREEN } from '../../screen/actionTypes'
-import { switchToHomeScreen, switchToMolecularScreen } from '../../screen'
+import { switchToHomeScreen, switchToStatsScreen } from '../../screen'
 
 describe('root reducer', () => {
     it('should initially return default state', () => {
@@ -27,7 +27,7 @@ describe('root reducer', () => {
         let state = rootReducer(defaultAdilympicsState, switchToHomeScreenAction)
         expect(state.ui.screen.type).toEqual('home')
 
-        const switchToMolecularScreenAction = switchToMolecularScreen()
+        const switchToMolecularScreenAction = switchToStatsScreen()
         state = rootReducer(state, switchToMolecularScreenAction)
         expect(state.ui.screen.type).toEqual('molecular')
     })
