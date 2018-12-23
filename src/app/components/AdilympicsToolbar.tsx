@@ -63,7 +63,7 @@ export type Props = Readonly<{
 }> &
     ThemedAppProps
 
-const WorkbenchToolbar = ({ theme, onHomeClick, children }: Props) => {
+const AdilympicsToolbar = ({ theme, onHomeClick, children }: Props) => {
     return (
         // This is the only place we need to access the theme via our own model
         // From here on, it is safe and convenient to use the `useTheme` hook
@@ -126,4 +126,4 @@ const ToolbarRight = () => {
     )
 }
 
-export default WorkbenchToolbar
+export default AdilympicsToolbar

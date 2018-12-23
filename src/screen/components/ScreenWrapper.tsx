@@ -1,10 +1,10 @@
-import { WorkbenchScreen } from '../model'
+import { AdilympicsScreen } from '../model'
 import * as React from 'react'
 import ErrorScreen from './ErrorScreen'
 import HomeScreen from '../containers/HomeScreen'
 
 type Props = Readonly<{
-    screen: WorkbenchScreen
+    screen: AdilympicsScreen
 }>
 
 const ScreenWrapper = ({ screen }: Props) => {

@@ -5,7 +5,6 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { List as ImmutableList } from 'immutable'
 import { IconProp } from '@fortawesome/fontawesome-svg-core'
-import pink from '@material-ui/core/colors/pink'
 import {lightBlue} from "@material-ui/core/es/colors";
 
 const useStyles = makeStyles((theme: Theme) => ({
@@ -15,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     },
     card: {
         margin: theme.spacing.unit,
-        height: '40vh',
+        height: '60vh',
         cursor: 'pointer'
     },
     cardTitle: {

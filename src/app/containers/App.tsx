@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
-import { WorkbenchState } from '../../store'
+import { AdilympicsState } from '../../store'
 import App, { Props } from '../components/App'
 
-const mapStateToProps = (state: WorkbenchState): Props => {
+const mapStateToProps = (state: AdilympicsState): Props => {
     return state.ui
 }
 

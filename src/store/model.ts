@@ -1,9 +1,9 @@
 import { Theme } from '@material-ui/core'
-import { WorkbenchScreen } from '../screen'
+import { AdilympicsScreen } from '../screen'
 
-export type WorkbenchState = Readonly<{
+export type AdilympicsState = Readonly<{
     ui: Readonly<{
         theme: Theme
-        screen: WorkbenchScreen
+        screen: AdilympicsScreen
     }>
 }>

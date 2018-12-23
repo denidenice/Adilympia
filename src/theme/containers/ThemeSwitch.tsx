@@ -4,7 +4,7 @@ import ThemeSwitch from '../components/ThemeSwitch'
 import { Theme } from '@material-ui/core'
 import { ThemeAction } from '../actions'
 import { toggleTheme } from '../index'
-import { WorkbenchState } from '../../store'
+import { AdilympicsState } from '../../store'
 
 type FromStateProps = Readonly<{
     theme: Theme
@@ -14,7 +14,7 @@ type FromDispatchProps = Readonly<{
     onToggleTheme: () => void
 }>
 
-const mapStateToProps = (state: WorkbenchState): FromStateProps => {
+const mapStateToProps = (state: AdilympicsState): FromStateProps => {
     return { theme: state.ui.theme }
 }
 

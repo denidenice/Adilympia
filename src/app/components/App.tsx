@@ -1,19 +1,20 @@
 import * as React from 'react'
 import { Theme } from '@material-ui/core'
-import { WorkbenchScreen } from '../../screen'
+import { AdilympicsScreen } from '../../screen'
 import ScreenWrapper from '../../screen/components/ScreenWrapper'
-import WorkbenchToolbar from '../containers/WorkbenchToolbar'
+import AdilympicsToolbar from '../containers/AdilympicsToolbar'
+
 
 export type Props = Readonly<{
     theme: Theme
-    screen: WorkbenchScreen
+    screen: AdilympicsScreen
 }>
 
 const App = ({ theme, screen }: Props) => {
     return (
-        <WorkbenchToolbar>
+        <AdilympicsToolbar>
             <ScreenWrapper screen={screen} />
-        </WorkbenchToolbar>
+        </AdilympicsToolbar>
     )
 }
 

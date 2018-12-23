@@ -19,4 +19,4 @@ export type ErrorScreen = Readonly<{
     message: string
 }>
 
-export type WorkbenchScreen = HomeScreen | ProceduralScreen | MedicalScreen | MolecularScreen | ErrorScreen
+export type AdilympicsScreen = HomeScreen | ProceduralScreen | MedicalScreen | MolecularScreen | ErrorScreen

@@ -1,3 +1,3 @@
-import { WorkbenchScreen } from './model'
+import { AdilympicsScreen } from './model'
 
-export const defaultScreen: WorkbenchScreen = { type: 'home' }
+export const defaultScreen: AdilympicsScreen = { type: 'home' }

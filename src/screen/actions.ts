@@ -1,11 +1,11 @@
 import { SWITCH_SCREEN } from './actionTypes'
-import { WorkbenchScreen } from './model'
+import { AdilympicsScreen } from './model'
 
 export type ScreenAction = SwitchScreenAction
 
 export type SwitchScreenAction = Readonly<{
     type: typeof SWITCH_SCREEN
-    screen: WorkbenchScreen
+    screen: AdilympicsScreen
 }>
 
 export const switchToHomeScreen = (): SwitchScreenAction => {

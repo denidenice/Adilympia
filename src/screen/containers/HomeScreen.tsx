@@ -3,20 +3,20 @@ import HomeScreen, { Props } from '../components/HomeScreen'
 import { List as ImmutableList } from 'immutable'
 import { ThunkDispatch } from 'redux-thunk'
 import { ScreenAction, switchToMedicalScreen, switchToMolecularScreen, switchToProceduralScreen } from '../actions'
-import { WorkbenchScreen } from '../model'
+import { AdilympicsScreen } from '../model'
 import { noOp } from '../../util'
-import { faTasks, faUserMd, faDna } from '@fortawesome/free-solid-svg-icons'
+import { faDice } from '@fortawesome/free-solid-svg-icons'
 
-const mapDispatchToProps = (dispatch: ThunkDispatch<WorkbenchScreen, {}, ScreenAction>): Props => {
+const mapDispatchToProps = (dispatch: ThunkDispatch<AdilympicsScreen, {}, ScreenAction>): Props => {
     const cards = ImmutableList.of(
         {
             title: 'New Game',
-            icon: faTasks,
+            icon: faDice,
             onClick: () => dispatch(switchToProceduralScreen())
         },
         {
             title: 'Stats',
-            icon: faTasks,
+            icon: faDice,
             onClick: () => dispatch(switchToProceduralScreen())
         }
     )
