@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography/Typography'
 import { ThemeSwitch } from '../../theme'
 import { makeStyles, ThemeProvider, useTheme } from '@material-ui/styles'
 import HomeIcon from '@material-ui/icons/Home'
+import Logo from '../../res/Olympic_rings_with_transparent_rims.svg';
+
 
 const pagePadding = 8
 
@@ -26,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) => ({
         position: 'absolute',
         width: '100%',
         display: 'grid',
-        pointerEvents: 'none'
+        pointerEvents: 'none',
     },
     title: {
         justifySelf: 'center',
@@ -54,7 +56,12 @@ const useStyles = makeStyles((theme: Theme) => ({
         paddingRight: pagePadding,
         paddingBottom: pagePadding,
         display: 'grid',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundImage: `url(${Logo})`
+
+    },
+    logo: {
+        marginLeft: 'auto', // push to the right
     }
 }))
 
@@ -100,7 +107,7 @@ const ToolbarLeft = ({ onHomeClick }: Pick<Props, 'onHomeClick'>) => {
     return (
         <div className={classes.toolbarLeft}>
             <IconButton color="inherit" onClick={onHomeClick}>
-                <HomeIcon onClick={onHomeClick} />
+              <HomeIcon onClick={onHomeClick}/>
             </IconButton>
         </div>
     )
@@ -111,9 +118,10 @@ const ToolbarCenter = () => {
     return (
         <div className={classes.toolbarCenter}>
             <Typography className={classes.title} variant="h6">
-                 Adilympics {process.env.REACT_APP_VERSION}
+                 Adilympia
             </Typography>
         </div>
+
     )
 }
 
