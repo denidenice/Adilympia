@@ -58,10 +58,6 @@ const useStyles = makeStyles((theme: Theme) => ({
         display: 'grid',
         alignItems: 'center',
         backgroundImage: `url(${Logo})`
-
-    },
-    logo: {
-        marginLeft: 'auto', // push to the right
     }
 }))
 
