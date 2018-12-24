@@ -2,6 +2,7 @@
   "name": "web-client",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://denidenice.github.io/Adilympia",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.10",
     "@fortawesome/free-solid-svg-icons": "^5.6.1",
@@ -26,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@types/jest": "23.3.10",
@@ -35,6 +38,7 @@
     "@types/react-dom": "16.0.11",
     "@types/react-redux": "6.0.11",
     "@types/redux-thunk": "2.1.0",
+    "gh-pages": "^2.0.1",
     "husky": "1.2.1",
     "lint-staged": "8.1.0",
     "prettier": "1.15.3",
